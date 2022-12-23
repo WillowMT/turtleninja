@@ -1,0 +1,222 @@
+@font-face {
+    font-family: cotta;
+    src: url("/fonts/cotta-free.otf");
+}
+
+* {
+    font-family: 'Cotta',cotta,'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+}
+
+li {
+    list-style-type: none;
+    margin: 10px;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 10;
+    background-color: transparent;
+    padding: 10px;
+}
+
+.rightNav {
+    display: flex;
+    align-items: center;
+}
+
+.rightNav > * {
+    color:white;
+    margin:0px 20px;
+}
+
+.carousel {
+    width: 100%;
+    min-height: 100vh;
+    background: url('../assets/bg002.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+}
+
+.carousel>h2 {
+    font-size: 4rem;
+    color: white;
+    margin-bottom: none;
+}
+
+.controller {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 400px;
+    margin: 10px;
+    /* position: absolute; */
+    transform: translateY(40px);
+    z-index: 10;
+}
+
+.controller > button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+i {
+    color: white;
+    z-index: 200;
+    cursor: pointer;
+}
+
+.glide {
+    width: 80%;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 5px;
+    transform:translateY(-30px);
+}
+
+
+.card {
+    width: 100%;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    place-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    transition: -webkit-transform 0.5s ease-in-out;
+    -o-transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.card>img {
+    height: 300px;
+    width: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+.card>h3 {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.card>div {
+    text-align: center;
+    color: white;
+    /* background-color: black; */
+    width: 70%;
+    margin: 20px;
+
+}
+
+.card > ul > li {
+    
+}
+
+#left-btn {
+    -webkit-animation: leftbtn 1s alternate infinite;
+    animation: leftbtn 1s alternate infinite;
+}
+
+#right-btn {
+    left: 87%;
+    -webkit-animation: rightbtn 1s alternate infinite;
+    animation: rightbtn 1s alternate infinite;
+}
+
+.shopping-list {
+    height: 100vh;
+}
+
+@media screen and (max-width:800px) {
+    .controller {
+        width:250px;
+    }
+
+    .card > img {
+        height:150px;
+    }
+
+    #logo {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@-webkit-keyframes leftbtn {
+    from {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+
+    to {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+}
+
+@keyframes leftbtn {
+    from {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+
+    to {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+}
+
+@-webkit-keyframes rightbtn {
+    from {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+
+    to {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+}
+
+@keyframes rightbtn {
+    from {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+
+    to {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+}

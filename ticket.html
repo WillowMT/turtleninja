@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tickets</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/ticket.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="nav">
+      <a href="/index.html">
+        <img
+          id="logo"
+          class=""
+          src="./assets/logo.png"
+          width="50px"
+          height="50px"
+        />
+      </a>
+      <div class="rightNav">
+        <i onclick="alert('clicked')" style="position: relative" class="fa-solid fa-cart-shopping fa-lg"
+          ><p
+            id="shopping"
+            style="
+              font-size: 10px;
+              position: absolute;
+              top: -10px;
+              left: 70%;
+              background-color: red;
+              padding: 10px 5px;
+              width: 20px;
+              height: 20px;
+              text-align: center;
+              border-radius: 50%;
+            "
+          >
+            1
+          </p></i
+        >
+        <p>Get To Know Me &nbsp ⬇</p>
+      </div>
+    </nav>
+
+    <div class="carousel">
+      <h2>Tickets</h2>
+      <div class="controller">
+        <button id="left-btn">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button id="right-btn">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+      <div class="glide">
+        <div class="card">
+          <h3>Children</h3>
+          <img class="ticket" src="./assets/ticket_3.png" alt="" />
+          <div>
+            <li>$ 60</li>
+            <li>+ Free Kids Meal</li>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Adult</h3>
+          <img class="ticket" src="./assets/ticket_2.png" alt="" />
+          <div>
+            <li>$ 90</li>
+            <li>+ Extra $ 15 coupon</li>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Senior</h3>
+          <img class="ticket" src="./assets/ticket_1.png" alt="" />
+          <div>
+            <li>$ 70</li>
+            <li>+ Extra $ 15 coupon</li>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Express</h3>
+          <img class="ticket" src="./assets/ticket_4.png" alt="" />
+          <div>
+            <li>$ 100</li>
+            <li>+ Free Adult Meal</li>
+            <li>+ Unlimited Travel</li>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="shopping-list">
+      <h1>Add to Cart</h1>
+    </div>
+
+    <script src="./script/shopping.js"></script>
+    <script src="./script/carousel.js"></script>
+  </body>
+</html>
