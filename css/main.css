@@ -152,7 +152,7 @@ a {
 
 .parallax__group {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
@@ -379,7 +379,7 @@ a {
 .social-icons {
   position: absolute;
   bottom: 0;
-  translate: 10px -10px;
+  translate: 10px -20px;
 }
 
 i {
@@ -410,11 +410,12 @@ i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  place-items: center;
-  place-content: center;
+  /* place-items: flex-start; */
+  /* place-content: center; */
 }
 
 .cards {
+  margin: 4rem 0px;
   width: 100%;
   display: -ms-grid;
   display: grid;
@@ -422,6 +423,7 @@ i {
   -ms-grid-columns: 2fr 3fr;
   grid-template-columns: 2fr 3fr;
   place-items: center;
+  /* position: absolute; */
 }
 
 
@@ -438,13 +440,12 @@ i {
 
 @media screen and (max-width:900px) {
   .cards {
-    width: 100%;
-    height: 100%;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    place-items: center;
+    /* margin: 3rem 0rem; */
+  }
+
+  .cards > div > img {
+    width:400px;
   }
 
 }
