@@ -10,6 +10,7 @@
 
 * {
   font-family: 'Questrial', sans-serif;
+  box-sizing: border-box;
 }
 
 @-webkit-keyframes typing {
@@ -338,11 +339,6 @@ a {
   margin-bottom: 3rem;
 }
 
-/* @media screen and (max-width:600px) {
-  .cards > div {
-    padding: 0 1rem;
-  }
-} */
 
 @media (min-width: 760px) {
   .hero-text ul li {
