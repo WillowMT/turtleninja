@@ -213,7 +213,7 @@ i {
 
 #map {
     background-color: black;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -236,7 +236,7 @@ i {
 }
 
 #map>img {
-    width: 80%;
+    width: 100%;
     margin-bottom: 20%;
 }
 
@@ -417,7 +417,7 @@ textarea {
 
 @media screen and (min-width:800px) {
     #map {
-        padding: 7rem;
+        padding: 2rem;
     }
 }
 
