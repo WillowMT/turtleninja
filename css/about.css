@@ -245,7 +245,7 @@ i {
 #map {
   background-color: white;
   /* min-height: 100vh; */
-  height: fit-content;
+  min-height: 100vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -450,9 +450,6 @@ textarea {
   animation: bobbing 1s alternate infinite;
 }
 
-@media screen and (max-width:800px) {
-}
-
 
 @media screen and (max-width: 1200px) {
   .page1 {
@@ -465,7 +462,7 @@ textarea {
   }
 
   .page1 > p {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 
   #map {
@@ -481,7 +478,7 @@ textarea {
     margin: auto;
   }
 
-  .nav > li:nth-child(4),
+  .nav > li:nth-child(0), li:nth-child(3),li:nth-child(4),
   li:nth-child(5) {
     display: none;
   }
