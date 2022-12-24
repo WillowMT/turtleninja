@@ -42,8 +42,8 @@ li {
 
 .carousel {
     width: 100%;
-    min-height: 100vh;
-    background: url('../assets/bg002.svg');
+    max-height: 100vh;
+    background: url('../assets/bg004.svg');
     background-repeat: no-repeat;
     background-size: cover;
     display: -webkit-box;
@@ -56,7 +56,7 @@ li {
     flex-direction: column;
     place-content: center;
     place-items: center;
-    margin: 0;
+    padding: 80px;
 }
 
 .carousel>h2 {
