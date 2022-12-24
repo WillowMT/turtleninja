@@ -42,7 +42,7 @@ li {
 
 .carousel {
     width: 100%;
-    max-height: 100vh;
+    min-height: 100vh;
     background: url('../assets/bg004.svg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -74,9 +74,7 @@ li {
     justify-content: space-between;
     width: 400px;
     margin: 10px;
-    /* position: absolute; */
     transform: translateY(40px);
-    z-index: 10;
 }
 
 .controller > button {
@@ -119,6 +117,7 @@ i {
     -o-transition: transform 0.5s ease-in-out;
     transition: transform 0.5s ease-in-out;
     transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+    z-index: 10;
 }
 
 .card>img {
