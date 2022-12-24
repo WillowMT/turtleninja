@@ -88,6 +88,8 @@ body {
     #f1ab4b 40%,
     #1a4873 88%
   );
+  text-align: center;
+  margin: 0 auto;
   background-clip: text;
   -webkit-background-clip: text;
   text-fill-color: transparent;
