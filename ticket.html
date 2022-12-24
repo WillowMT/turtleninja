@@ -27,7 +27,10 @@
         />
       </a>
       <div class="rightNav">
-        <i onclick="alert('clicked')" style="position: relative" class="fa-solid fa-cart-shopping fa-lg"
+        <i
+          onclick="alert('clicked')"
+          style="position: relative"
+          class="fa-solid fa-cart-shopping fa-lg"
           ><p
             id="shopping"
             style="
@@ -43,7 +46,7 @@
               border-radius: 50%;
             "
           >
-            1
+            0
           </p></i
         >
         <p>Get To Know Me &nbsp ⬇</p>
@@ -98,6 +101,33 @@
     </div>
     <div class="shopping-list">
       <h1>Add to Cart</h1>
+      <div class="container">
+        <div class="item">
+          <h3>Children</h3>
+          <i onclick="decrement(getid('item01'))" class="fa-solid fa-minus"></i>
+          <p id="item01">0</p>
+          <i onclick="increment(getid('item01'))" class="fa-solid fa-plus"></i>
+        </div>
+        <div class="item">
+          <h3>Adult</h3>
+          <i onclick="decrement(getid('item02'))" class="fa-solid fa-minus"></i>
+          <p id="item02">0</p>
+          <i onclick="increment(getid('item02'))" class="fa-solid fa-plus"></i>
+        </div>
+        <div class="item">
+          <h3>Senior</h3>
+          <i onclick="decrement(getid('item03'))" class="fa-solid fa-minus"></i>
+          <p id="item03">0</p>
+          <i onclick="increment(getid('item03'))" class="fa-solid fa-plus"></i>
+        </div>
+        <div class="item">
+          <h3>Express</h3>
+          <i onclick="decrement(getid('item04'))" class="fa-solid fa-minus"></i>
+          <p id="item04">0</p>
+          <i onclick="increment(getid('item04'))" class="fa-solid fa-plus"></i>
+        </div>
+      </div>
+      <button class="submit">Checkout</button>
     </div>
 
     <script src="./script/shopping.js"></script>

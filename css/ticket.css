@@ -3,6 +3,8 @@
     src: url("/fonts/cotta-free.otf");
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
 * {
     font-family: 'Cotta',cotta,'Times New Roman', Times, serif;
     box-sizing: border-box;
@@ -10,6 +12,7 @@
 
 body {
     margin:0;
+    background-color: black;
 }
 
 li {
@@ -21,7 +24,7 @@ li {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    position: absolute;
+    position: fixed;
     z-index: 10;
     background-color: transparent;
     padding: 10px;
@@ -53,6 +56,7 @@ li {
     flex-direction: column;
     place-content: center;
     place-items: center;
+    margin: 0;
 }
 
 .carousel>h2 {
@@ -139,9 +143,6 @@ i {
 
 }
 
-.card > ul > li {
-    
-}
 
 #left-btn {
     -webkit-animation: leftbtn 1s alternate infinite;
@@ -155,7 +156,57 @@ i {
 }
 
 .shopping-list {
-    height: 100vh;
+    width: 100%;
+    max-height: 100vh;
+    background:url('../assets/bg003.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    /* transform: translateY(-25px); */
+    display: flex;
+    flex-direction: column;
+    /* place-content: center; */
+    place-items: center;
+    padding-bottom: 5%;
+}
+
+.shopping-list > h1 {
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+}
+
+.container {
+    width:80%;
+    /* background-color: red; */
+    padding:20px 0px;
+}
+
+.container > .item {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    place-items: center;
+    margin: 20px;
+}
+
+.item > h3, p {
+    color:white;
+}
+
+.submit {
+    margin: 20px 0px;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    padding: 10px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition:background-color 0.2s;
+}
+
+.submit:hover {
+    background-color: #6600FF;
 }
 
 @media screen and (max-width:800px) {
